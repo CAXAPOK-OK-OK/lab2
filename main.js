@@ -13,15 +13,17 @@ convertSpeed(); */
 
 //////////////////////////////////ЗАДАНИЕ 2//////////////////////////////////
 
-/* const absValue = (num) =>{
-    num = +prompt("Число", "")
+number = +prompt("Число", "")
+const absValue = (num) =>{
 if (num < 0){
     console.log(`absValue(${num}) -> ${num * -1 }`);
+    return num*(-1)
 } else{
     console.log(`absValue(${num}) -> ${num}`);
+    return num;
 }
 }
-absValue(); */
+rez = absValue(number);
 
 //////////////////////////////////ЗАДАНИЕ 3//////////////////////////////////
 
@@ -38,16 +40,16 @@ console.log(
 
 //////////////////////////////////ЗАДАНИЕ 4//////////////////////////////////
 
-//min1 = +prompt("Введите минимальное значение", "")
-//max1 = +prompt("Введите максимальное значение", "")
+min1 = +prompt("Введите минимальное значение", "")
+max1 = +prompt("Введите максимальное значение", "")
 const randomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
 };
-//console.log(`randomNumber(${min1}, ${max1}) -> ${randomNumber(min1, max1)}`)
+console.log(`randomNumber(${min1}, ${max1}) -> ${randomNumber(min1, max1)}`)
 
 //////////////////////////////////ЗАДАНИЕ 5//////////////////////////////////
 
-num = +prompt("Введите количество элементов массива", "");
+/* num = +prompt("Введите количество элементов массива", "");
 mas = [];
 for (let i = 0; i < num; i++) {
   mas.push(Math.round(Math.random() * 100));
@@ -62,4 +64,4 @@ const randArray = (count) => {
   return massiv;
 };
 
-console.log(`sampleArray([${mas}], ${count}) -> [${randArray(count)}])`);
+console.log(`sampleArray([${mas}], ${count}) -> [${randArray(count)}])`); */
